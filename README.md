@@ -133,40 +133,47 @@
 5. Accesos necesarios (dominio, hosting, APIs, cuentas de correo si aplican).
 6. Lista de contactos para aprobaciones y revisión.
 
+Aquí te paso la parte corregida, alineada con lo que vimos en tu web (precios en **Soles**, claridad en beneficios y más enfoque comercial):
+
 ---
 
 ## Desglose de costos (referencia profesional y ajustable)
 
-> Los precios son referenciales y se ajustan tras definición del alcance final (features, integraciones y número de páginas dinámicas).
+> Los precios son **referenciales** y podrán ajustarse según el alcance final definido (funcionalidades, número de páginas e integraciones requeridas).
 
 ### Paquetes sugeridos
 
-* **Plan Desarrollo Profesional** — *S/ 3,200* (equivalente aproximado a S/800 en tus precios antiguos, ajustado a mercado actual)
+* **Plan Desarrollo Profesional** — *S/ 800*
 
-  * Sitio corporativo (hasta 6–8 páginas estáticas/dinámicas).
-  * Diseño responsive, SEO básico, formularios y panel básico.
-  * 1 mes de soporte post-lanzamiento.
+  * Sitio corporativo de hasta 6 páginas principales.
+  * Diseño responsive, SEO básico, formularios de contacto y panel simple.
+  * Ideal para negocios que requieren **presencia digital profesional en menos de 4 semanas**.
+  * Incluye 1 mes de soporte correctivo post-lanzamiento.
 
-* **Plan Solución Empresarial** — *S/ 4,800*
+* **Plan Solución Empresarial** — *S/ 1,200*
 
-  * Sitio + panel avanzado (gestión de blog, casos de éxito, multiusuarios).
-  * Integraciones básicas (API a ERP/CRM), backups programados.
-  * 3 meses de soporte y monitoreo.
+  * Sitio corporativo con panel avanzado (blog, casos de éxito, multiusuarios).
+  * Integraciones básicas con sistemas externos (ERP/CRM), backups programados.
+  * Orientado a empresas que buscan **gestionar contenido y escalar su presencia digital**.
+  * Incluye 3 meses de soporte y monitoreo.
 
-* **Plan Transformación Digital** — *Desde S/ 9,500*
+* **Plan Transformación Digital** — *Desde S/ 2,500*
 
-  * Solución completa con módulos ERP/IA/automatizaciones según alcance.
-  * Dashboards ejecutivos, integraciones complejas y soporte extendido (12 meses).
+  * Solución integral con módulos ERP, IA y automatizaciones a medida.
+  * Dashboards ejecutivos e integraciones complejas.
+  * Enfoque en **digitalización completa y escalabilidad empresarial**.
+  * Incluye soporte extendido de hasta 12 meses.
 
 ### Servicios adicionales / Opcionales
 
-* Integración ERP/CRM personalizada: **Cotización por alcance**.
-* E-commerce (catálogo + pagos): desde **S/ 6,000**.
-* Mantenimiento mensual (updates, backups, seguridad): **S/ 250–700 / mes** según SLA.
-* Servicio de SEO avanzado: **S/ 500 – 1,200 / mes** según alcance.
-* Fotografías profesionales (sesión): **S/ 400 – 800** (opcional).
+* Integración ERP/CRM personalizada: **cotización según alcance**.
+* E-commerce (catálogo + pagos online): desde **S/ 1,800**.
+* Mantenimiento mensual (actualizaciones, backups, seguridad): **S/ 250 – 700 / mes** según SLA.
+* SEO avanzado y posicionamiento: **S/ 500 – 1,200 / mes**.
+* Fotografía profesional corporativa: **S/ 400 – 800** (opcional).
 
 ---
+
 
 ## Modalidades de pago y condiciones
 
