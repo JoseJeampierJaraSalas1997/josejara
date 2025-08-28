@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Jara - Desarrollador Web | ERP, IA & Automatizaciones</title>
+    <meta name="description"
+        content="Desarrollador web especializado en ERP a medida, inteligencia artificial, automatizaciones y soluciones empresariales escalables. Desde S/800.">
+    <meta name="keywords"
+        content="desarrollador web, ERP a medida, inteligencia artificial, automatizaciones, SEO, páginas web Lima">
+    <link rel="canonical" href="https://josejara.dev">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jose Jara - Desarrollador Web Experto">
+    <meta property="og:description"
+        content="Soluciones web a medida, ERP, IA y automatizaciones para hacer crecer tu negocio">
+    <meta property="og:type" content="website">
+
+    <!-- Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #0066cc;
+            --secondary-blue: #4d94ff;
+            --primary-green: #00b341;
+            --secondary-green: #66d98f;
+            --primary-silver: #c0c5ce;
+            --secondary-silver: #e8eaed;
+            --primary-gold: #ffd700;
+            --secondary-gold: #ffe55c;
+            --dark-blue: #003d7a;
+            --dark-green: #006b28;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Advanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+
+            66% {
+                transform: translateY(-10px) rotate(-1deg);
+            }
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(0, 179, 65, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(0, 179, 65, 0.6), 0 0 60px rgba(0, 179, 65, 0.3);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes iconSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Gradient Backgrounds */
+        .gradient-blue {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+        }
+
+        .gradient-green {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+
+        .gradient-gold {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+        }
+
+        .gradient-silver {
+            background: linear-gradient(135deg, var(--primary-silver), var(--secondary-silver));
+        }
+
+        .gradient-animated {
+            background: linear-gradient(-45deg, var(--primary-blue), var(--primary-green), var(--primary-gold), var(--secondary-blue));
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,215,0,0.1)" points="0,1000 1000,800 1000,1000"/><circle fill="rgba(192,197,206,0.1)" cx="800" cy="200" r="100"/><circle fill="rgba(255,215,0,0.05)" cx="200" cy="300" r="150"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-content .highlight {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .stat:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .stat:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .stat:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+            color: var(--primary-gold);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--primary-gold);
+            color: var(--dark-blue);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .floating-elements {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-card:nth-child(1) {
+            top: 0;
+            left: 0;
+            animation-delay: 0s;
+        }
+
+        .floating-card:nth-child(2) {
+            top: 100px;
+            right: 0;
+            animation-delay: 2s;
+        }
+
+        .floating-card:nth-child(3) {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: 4s;
+        }
+
+        .floating-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: var(--primary-gold);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--bg-light);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 102, 204, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-animated);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            font-size: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-icon.blue {
+            background: var(--gradient-blue);
+        }
+
+        .service-icon.green {
+            background: var(--gradient-green);
+        }
+
+        .service-icon.gold {
+            background: var(--gradient-gold);
+            color: var(--dark-blue);
+        }
+
+        .service-icon.silver {
+            background: var(--gradient-silver);
+            color: var(--text-primary);
+        }
+
+        .service-card:hover .service-icon {
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .service-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            color: var(--text-secondary);
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+        }
+
+        .service-features li i {
+            color: var(--primary-green);
+            font-size: 1.1rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 6rem 2rem;
+            background: var(--white);
+            position: relative;
+        }
+
+        .pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 179, 65, 0.05));
+            border-radius: 0 0 50px 50px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border-radius: 30px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 3px solid transparent;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.popular {
+            border-color: var(--primary-gold);
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.02), rgba(0, 179, 65, 0.02));
+        }
+
+        .pricing-card.popular::before {
+            content: 'MÁS POPULAR';
+            position: absolute;
+            top: 25px;
+            right: -45px;
+            background: var(--gradient-gold);
+            color: var(--dark-blue);
+            padding: 0.7rem 4rem;
+            font-size: 0.8rem;
+            font-weight: 800;
+            transform: rotate(45deg);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card.popular:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .pricing-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .pricing-price {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .pricing-period {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .pricing-hosting {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .pricing-hosting .hosting-title {
+            font-weight: 700;
+            color: var(--primary-gold);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-hosting .hosting-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+
+        .pricing-features li {
+            padding: 0.7rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .pricing-features li i {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+
+        .pricing-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: var(--white);
+            border: none;
+            padding: 1.2rem;
+            border-radius: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .pricing-button:hover::before {
+            left: 100%;
+        }
+
+        .pricing-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 102, 204, 0.4);
+        }
+
+        /* Automations Section */
+        .automations {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 179, 65, 0.05));
+        }
+
+        .automations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .automation-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .automation-card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--primary-gold);
+        }
+
+        .automation-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-green);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .automation-card:hover .automation-icon {
+            animation: pulse 1s ease-in-out;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 102, 204, 0.1);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            font-size: 4rem;
+            color: var(--primary-gold);
+            font-family: serif;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-role {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-rating i {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle fill="rgba(255,215,0,0.1)" cx="200" cy="200" r="100"/><circle fill="rgba(192,197,206,0.1)" cx="800" cy="800" r="150"/></svg>');
+            background-size: cover;
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-button:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-button i {
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-stats {
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .pricing-card.popular {
+                transform: none;
+            }
+
+            .pricing-card.popular:hover {
+                transform: translateY(-10px);
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .floating-elements {
+                height: 300px;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid var(--primary-silver);
+            border-top: 4px solid var(--primary-blue);
+            border-radius: 50%;
+            animation: iconSpin 1s linear infinite;
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--primary-green), var(--primary-gold));
+            z-index: 1001;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Jose Jara</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#automatizaciones">Automatizaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Desarrollo <span class="highlight">Soluciones Digitales</span> que Transforman Negocios</h1>
+                <p class="hero-subtitle">Especialista en ERP a medida, inteligencia artificial, automatizaciones y
+                    desarrollo web empresarial. Tecnología que impulsa el crecimiento exponencial de tu negocio.</p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="7">0</span>
+                        <span class="stat-label">Años Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Soporte</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#contacto" class="cta-button">
+                        <i class="fas fa-rocket"></i>
+                        Cotizar Proyecto
+                    </a>
+                    <a href="#precios" class="cta-button secondary">
+                        <i class="fas fa-chart-line"></i>
+                        Ver Planes
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="floating-elements">
+                    <div class="floating-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Inteligencia Artificial</h4>
+                        <p>Machine Learning</p>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-cogs"></i>
+                        <h4>ERP Personalizado</h4>
+                        <p>Gestión Integral</p>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Automatizaciones</h4>
+                        <p>Procesos Optimizados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title">Servicios Especializados</h2>
+                <p class="section-subtitle">Soluciones tecnológicas integrales diseñadas para escalar tu negocio con
+                    seguridad, eficiencia y resultados medibles.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="service-icon blue">
+                        <i class="fa-solid fa-globe-americas" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo Web Empresarial</h3>
+                    <p class="service-description">Páginas web y aplicaciones empresariales con diseño responsive,
+                        optimización SEO avanzada y arquitectura escalable.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Diseño responsive y PWA</li>
+                        <li><i class="fas fa-check-circle"></i>SEO técnico y estratégico</li>
+                        <li><i class="fas fa-check-circle"></i>Optimización de velocidad</li>
+                        <li><i class="fas fa-check-circle"></i>Integración con APIs</li>
+                        <li><i class="fas fa-check-circle"></i>Panel administrativo</li>
+                        <li><i class="fas fa-check-circle"></i>Certificado SSL y seguridad</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="service-icon green">
+                        <i class="fa-solid fa-brain" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Inteligencia Artificial</h3>
+                    <p class="service-description">Implementación de IA para automatización inteligente, análisis
+                        predictivo y optimización de procesos empresariales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Chatbots conversacionales</li>
+                        <li><i class="fas fa-check-circle"></i>Análisis predictivo de datos</li>
+                        <li><i class="fas fa-check-circle"></i>Computer Vision</li>
+                        <li><i class="fas fa-check-circle"></i>Procesamiento de lenguaje natural</li>
+                        <li><i class="fas fa-check-circle"></i>Machine Learning personalizado</li>
+                        <li><i class="fas fa-check-circle"></i>APIs de IA avanzadas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="service-icon gold">
+                        <i class="fas fa-project-diagram" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">ERP a Medida</h3>
+                    <p class="service-description">Sistemas ERP personalizados para gestión integral empresarial con
+                        módulos específicos para tu industria.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Gestión de inventarios en tiempo real</li>
+                        <li><i class="fas fa-check-circle"></i>Facturación electrónica automática</li>
+                        <li><i class="fas fa-check-circle"></i>CRM integrado</li>
+                        <li><i class="fas fa-check-circle"></i>Reportes ejecutivos y KPIs</li>
+                        <li><i class="fas fa-check-circle"></i>Módulos contables y financieros</li>
+                        <li><i class="fas fa-check-circle"></i>Dashboard en tiempo real</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="service-icon silver">
+                        <i class="fas fa-search-plus" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Marketing Digital</h3>
+                    <p class="service-description">Estrategias integrales de posicionamiento web y marketing digital
+                        para maximizar tu visibilidad online.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Auditoría SEO técnica completa</li>
+                        <li><i class="fas fa-check-circle"></i>Estrategia de contenidos</li>
+                        <li><i class="fas fa-check-circle"></i>Link building de calidad</li>
+                        <li><i class="fas fa-check-circle"></i>Google Ads y Facebook Ads</li>
+                        <li><i class="fas fa-check-circle"></i>Analytics y métricas avanzadas</li>
+                        <li><i class="fas fa-check-circle"></i>Reportes mensuales detallados</li>
+                    </ul>
+                </div>
+
+                <!-- Ciberseguridad -->
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="service-icon red">
+                        <i class="fa-solid fa-shield-halved" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Ciberseguridad & Protección de Datos</h3>
+                    <p class="service-description">Protege tu empresa con soluciones avanzadas de seguridad digital,
+                        auditorías y cumplimiento normativo.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"> </i>Auditorías de seguridad y pentesting</li>
+                        <li><i class="fas fa-check-circle"></i>Implementación de firewalls y WAF</li>
+                        <li><i class="fas fa-check-circle"></i>Monitoreo 24/7 contra amenazas</li>
+                        <li><i class="fas fa-check-circle"></i>Encriptación de datos sensibles</li>
+                        <li><i class="fas fa-check-circle"></i>Backup y recuperación ante desastres</li>
+                        <li><i class="fas fa-check-circle"></i>Cumplimiento GDPR/ISO 27001</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <div class="service-icon purple">
+                        <i class="fa-solid fa-cloud" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Cloud & DevOps</h3>
+                    <p class="service-description">Infraestructura moderna en la nube con prácticas DevOps para
+                        escalabilidad, automatización y alta disponibilidad.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Despliegues en AWS, GCP o Azure</li>
+                        <li><i class="fas fa-check-circle"></i>CI/CD y automatización de pipelines</li>
+                        <li><i class="fas fa-check-circle"></i>Orquestación con Kubernetes y Docker</li>
+                        <li><i class="fas fa-check-circle"></i>Infraestructura como código (IaC)</li>
+                        <li><i class="fas fa-check-circle"></i>Monitoreo y logging avanzado</li>
+                        <li><i class="fas fa-check-circle"></i>Alta disponibilidad y balanceo de carga</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precios" class="pricing">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title">Planes de Desarrollo</h2>
+                <p class="section-subtitle">Soluciones escalables diseñadas específicamente para cada etapa de
+                    crecimiento de tu negocio.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Desarrollo Profesional</h3>
+                        <div class="pricing-price">S/800</div>
+                        <div class="pricing-period">Proyecto completo</div>
+                    </div>
+                    <div class="pricing-hosting">
+                        <div class="hosting-title">
+                            <i class="fas fa-server"></i>
+                            Hosting & Infraestructura
+                        </div>
+                        <div class="hosting-price">$180 USD/año (VPS Premium)</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Diseño web responsive a medida</li>
+                        <li><i class="fas fa-check"></i>5-8 páginas optimizadas</li>
+                        <li><i class="fas fa-check"></i>SEO básico implementado</li>
+                        <li><i class="fas fa-check"></i>Formularios de contacto</li>
+                        <li><i class="fas fa-check"></i>Integración Google Analytics</li>
+                        <li><i class="fas fa-check"></i>Certificado SSL incluido</li>
+                        <li><i class="fas fa-check"></i>Panel de administración básico</li>
+                        <li><i class="fas fa-check"></i>3 meses de soporte técnico</li>
+                        <li><i class="fas fa-check"></i>Manual de uso incluido</li>
+                    </ul>
+                    <button class="pricing-button" onclick="contactWhatsApp('profesional')">Solicitar
+                        Cotización</button>
+                </div>
+
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Solución Empresarial</h3>
+                        <div class="pricing-price">S/1,200</div>
+                        <div class="pricing-period">Sistema integral</div>
+                    </div>
+                    <div class="pricing-hosting">
+                        <div class="hosting-title">
+                            <i class="fas fa-cloud"></i>
+                            Infraestructura Empresarial
+                        </div>
+                        <div class="hosting-price">$280 USD/año (Cloud VPS + CDN)</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Todo del plan anterior +</li>
+                        <li><i class="fas fa-check"></i>Sistema web avanzado con base de datos</li>
+                        <li><i class="fas fa-check"></i>Animaciones y microinteracciones</li>
+                        <li><i class="fas fa-check"></i>SEO intermedio con keywords</li>
+                        <li><i class="fas fa-check"></i>Blog/noticias dinámico</li>
+                        <li><i class="fas fa-check"></i>Integración redes sociales</li>
+                        <li><i class="fas fa-check"></i>Panel administrativo avanzado</li>
+                        <li><i class="fas fa-check"></i>Sistema de usuarios y roles</li>
+                        <li><i class="fas fa-check"></i>Backup automático diario</li>
+                        <li><i class="fas fa-check"></i>6 meses de soporte premium</li>
+                        <li><i class="fas fa-check"></i>Capacitación del equipo incluida</li>
+                    </ul>
+                    <button class="pricing-button" onclick="contactWhatsApp('empresarial')">Iniciar Proyecto</button>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Transformación Digital</h3>
+                        <div class="pricing-price">S/2,500+</div>
+                        <div class="pricing-period">ERP + IA completo</div>
+                    </div>
+                    <div class="pricing-hosting">
+                        <div class="hosting-title">
+                            <i class="fas fa-rocket"></i>
+                            Infraestructura Premium
+                        </div>
+                        <div class="hosting-price">$450 USD/año (Kubernetes + Docker)</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Despliegues de ERP open Source</li>
+                        <li><i class="fas fa-check"></i>Integración de IA avanzada</li>
+                        <li><i class="fas fa-check"></i>Automatizaciones inteligentes</li>
+                        <li><i class="fas fa-check"></i>SEO premium con estrategia completa</li>
+                        <li><i class="fas fa-check"></i>API REST personalizada</li>
+                        <li><i class="fas fa-check"></i>Dashboard ejecutivo en tiempo real</li>
+                        <li><i class="fas fa-check"></i>Módulos específicos por industria</li>
+                        <li><i class="fas fa-check"></i>Integración con sistemas externos</li>
+                        <li><i class="fas fa-check"></i>Deployment con Docker y Kubernetes</li>
+                        <li><i class="fas fa-check"></i>Monitoreo y alertas 24/7</li>
+                        <li><i class="fas fa-check"></i>12 meses soporte dedicado</li>
+                        <li><i class="fas fa-check"></i>Consultoría estratégica continua</li>
+                    </ul>
+                    <button class="pricing-button" onclick="contactWhatsApp('transformacion')">Transformar
+                        Negocio</button>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">ERP a Medida</h3>
+                        <div class="pricing-price">Consultar precio</div>
+                        <div class="pricing-period">Solución 100% personalizada</div>
+                    </div>
+                    <div class="pricing-hosting">
+                        <div class="hosting-title">
+                            <i class="fas fa-cogs"></i>
+                            Infraestructura Personalizada
+                        </div>
+                        <div class="hosting-price">Según requerimientos</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>ERP diseñado a medida</li>
+                        <li><i class="fas fa-check"></i>Integración con sistemas internos</li>
+                        <li><i class="fas fa-check"></i>Automatización avanzada</li>
+                        <li><i class="fas fa-check"></i>IA aplicada al negocio</li>
+                        <li><i class="fas fa-check"></i>Soporte dedicado 24/7</li>
+                        <li><i class="fas fa-check"></i>Consultoría estratégica incluida</li>
+                    </ul>
+                    <button class="pricing-button" onclick="contactWhatsApp('erpamedida')">Consultar Precio</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Automations Section -->
+    <section id="automatizaciones" class="automations">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title">Automatizaciones Inteligentes</h2>
+                <p class="section-subtitle">Optimiza tus procesos empresariales con automatizaciones que ahorran tiempo,
+                    reducen errores y aumentan la productividad.</p>
+            </div>
+
+            <div class="automations-grid">
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="automation-icon">
+                        <i class="fas fa-robot" style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Chatbots Inteligentes</h3>
+                    <p class="service-description">Asistentes virtuales que atienden clientes 24/7, califican leads y
+                        programan citas automáticamente.</p>
+                </div>
+
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="automation-icon">
+                        <i class="fas fa-mail-bulk"style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Email Marketing Automatizado</h3>
+                    <p class="service-description">Secuencias de emails personalizados basados en comportamiento del
+                        usuario y segmentación inteligente.</p>
+                </div>
+
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="automation-icon">
+                        <i class="fas fa-file-invoice"style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Facturación Automática</h3>
+                    <p class="service-description">Sistema que genera, envía y hace seguimiento de facturas
+                        automáticamente con integración SUNAT.</p>
+                </div>
+
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="automation-icon">
+                        <i class="fas fa-chart-line"style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Reportes Inteligentes</h3>
+                    <p class="service-description">Dashboards que se actualizan en tiempo real con KPIs personalizados y
+                        alertas automáticas.</p>
+                </div>
+
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="automation-icon">
+                        <i class="fas fa-warehouse"style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Gestión de Inventarios</h3>
+                    <p class="service-description">Control automático de stock con alertas de reposición y predicción de
+                        demanda con IA.</p>
+                </div>
+
+                <div class="automation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <div class="automation-icon">
+                        <i class="fas fa-sync-alt"style="color: white;"></i>
+                    </div>
+                    <h3 class="service-title">Integración de Sistemas</h3>
+                    <p class="service-description">Conecta todos tus sistemas para que compartan datos automáticamente
+                        sin intervención manual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title">Casos de Éxito</h2>
+                <p class="section-subtitle">
+                    Empresas que han transformado sus operaciones con nuestras soluciones tecnológicas.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El ERP que Jose desarrolló revolucionó completamente nuestra gestión.
+                        Reducimos el tiempo de procesamiento de pedidos en 70% y eliminamos errores manuales.
+                        El ROI fue evidente desde el primer mes.
+                    </p>
+                    <div class="testimonial-author">María González Ruiz</div>
+                    <div class="testimonial-role">CEO, Distribuidora Industrial Luna SAC</div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        La integración de IA en nuestro sistema de ventas automatizó la clasificación de leads y el
+                        seguimiento.
+                        Nuestras conversiones aumentaron 60% y el equipo se enfoca en cerrar ventas, no en tareas
+                        repetitivas.
+                    </p>
+                    <div class="testimonial-author">Carlos Mendoza Torres</div>
+                    <div class="testimonial-role">Director Comercial, TechSolutions Perú</div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Profesional excepcional con visión estratégica.
+                        Su página web con SEO avanzado nos posicionó #1 en Google para nuestras keywords principales.
+                        Los leads orgánicos se triplicaron en 4 meses.
+                    </p>
+                    <div class="testimonial-author">Ana Rodríguez Vega</div>
+                    <div class="testimonial-role">Directora Marketing, Consultoría Empresarial Prime</div>
+                </div>
+
+                <!-- Testimonio 4 - Maxillaris -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        La digitalización de procesos con el sistema desarrollado por Jose
+                        permitió a Maxillaris agilizar la gestión de pacientes y
+                        reducir los tiempos de atención en un 50%.
+                    </p>
+                    <div class="testimonial-author">Dr. Luis Paredes</div>
+                    <div class="testimonial-role">Director General, Maxillaris</div>
+                </div>
+
+                <!-- Testimonio 5 - Systech -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        La implementación del ERP con integración en la nube nos permitió escalar operaciones
+                        en más de 3 países sin interrupciones.
+                        Systech logró eficiencia operativa y un control total de inventario.
+                    </p>
+                    <div class="testimonial-author">Ing. Patricia Ramos</div>
+                    <div class="testimonial-role">Gerente de Operaciones, Systech</div>
+                </div>
+
+                <!-- Testimonio 6 - Colegios Trilce -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        El sistema académico desarrollado por Jose permitió a Trilce gestionar miles de alumnos
+                        en tiempo real, optimizando matrículas, pagos y comunicación con los padres.
+                        Un salto tecnológico enorme para la institución.
+                    </p>
+                    <div class="testimonial-author">Lic. Jorge Fernández</div>
+                    <div class="testimonial-role">Director Académico, Colegios Trilce</div>
+                </div>
+
+                <!-- Testimonio 7 - Colegios La Pre -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+                    <div class="testimonial-rating" aria-label="Calificación: 5 de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        Gracias al sistema educativo online creado por Jose,
+                        La Pre pudo migrar a clases híbridas en tiempo récord.
+                        Hoy más de 20,000 estudiantes acceden a clases virtuales sin fallos.
+                    </p>
+                    <div class="testimonial-author">Msc. Rosa Villanueva</div>
+                    <div class="testimonial-role">Directora Académica, Colegios La Pre</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact-content">
+            <div data-aos="fade-up" data-aos-duration="800">
+                <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem;">¿Listo para Transformar tu
+                    Negocio?</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.95;">Conversemos sobre tu proyecto. Te
+                    ofrezco una consultoría gratuita de 30 minutos para analizar tus necesidades y proponer la mejor
+                    solución tecnológica.</p>
+            </div>
+
+            <div class="contact-buttons" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <a href="https://wa.me/51968097419?text=Hola%20Jose,%20estoy%20interesado%20en%20tus%20servicios%20de%20desarrollo%20web%20y%20automatizaciones"
+                    class="contact-button">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp: +51 968 097 419
+                </a>
+                <a href="mailto:jjeampierjs97@gmail.com?subject=Consulta%20sobre%20servicios%20de%20desarrollo"
+                    class="contact-button">
+                    <i class="fas fa-envelope"></i>
+                    jjeampierjs97@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/jose-jeampier-jara-salas-882a03236" target="_blank"
+                    class="contact-button">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn Profesional
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jose Jeampier Jara Salas - Desarrollador Full Stack Especializado. Todos los derechos
+                reservados.</p>
+            <p style="margin-top: 0.8rem; opacity: 0.8;">Transformando negocios a través de soluciones tecnológicas
+                innovadoras</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Loading screen
+        window.addEventListener('load', function () {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Progress bar
+        function updateProgressBar() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        // Header scroll effect
+        function headerScrollEffect() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 5px 30px rgba(0, 102, 204, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        }
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                const increment = target / 100;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + (counter.textContent.includes('+') ? '+' : '');
+                }, 30);
+            });
+        }
+
+        // WhatsApp contact function with improved messages
+        function contactWhatsApp(plan) {
+            const messages = {
+                'profesional': 'Hola Jose! Me interesa el Plan de Desarrollo Profesional (S/800). Necesito una página web profesional para mi negocio. ¿Podríamos agendar una consulta?',
+                'empresarial': 'Hola Jose! Quiero conocer más sobre la Solución Empresarial (S/1,200). Necesito un sistema web avanzado con base de datos. ¿Cuándo podemos conversar?',
+                'transformacion': 'Hola Jose! Estoy interesado en la Transformación Digital (S/2,500+). Necesito un ERP con IA para optimizar mi empresa. ¿Podemos agendar una consulta estratégica?',
+                'erpamedida': 'Hola Jose! Estoy buscando un ERP a Medida totalmente personalizado. Quiero conversar sobre una solución adaptada a los procesos de mi empresa. ¿Podemos coordinar una reunión?'
+            };
+
+
+            const message = encodeURIComponent(messages[plan]);
+            window.open(`https://wa.me/51968097419?text=${message}`, '_blank');
+        }
+
+        // Smooth scrolling
+        function initSmoothScrolling() {
+            const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Enhanced card hover effects
+        function initCardEffects() {
+            // Service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    const icon = this.querySelector('.service-icon');
+                    if (icon) {
+                        icon.style.transform = 'scale(1.1) rotate(5deg)';
+                        icon.style.transition = 'transform 0.4s ease';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    const icon = this.querySelector('.service-icon');
+                    if (icon) {
+                        icon.style.transform = 'scale(1) rotate(0deg)';
+                    }
+                });
+            });
+
+            // Pricing cards enhanced effects
+            const pricingCards = document.querySelectorAll('.pricing-card');
+            pricingCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    if (this.classList.contains('popular')) {
+                        this.style.transform = 'scale(1.05) translateY(-15px)';
+                    } else {
+                        this.style.transform = 'translateY(-15px) scale(1.02)';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    if (this.classList.contains('popular')) {
+                        this.style.transform = 'scale(1.05)';
+                    } else {
+                        this.style.transform = 'translateY(0) scale(1)';
+                    }
+                });
+            });
+        }
+
+        // Intersection Observer for counter animation
+        function initCounterObserver() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const statsSection = document.querySelector('.hero-stats');
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        }
+
+        // Mobile menu functionality
+        function initMobileMenu() {
+            if (window.innerWidth <= 768) {
+                const navContainer = document.querySelector('.nav-container');
+                const navLinks = document.querySelector('.nav-links');
+
+                // Create hamburger menu
+                const hamburger = document.createElement('div');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                hamburger.className = 'mobile-menu-toggle';
+                hamburger.style.cssText = `
+                    position: fixed;
+                    top: 1rem;
+                    right: 2rem;
+                    z-index: 1002;
+                    background: var(--primary-blue);
+                    color: white;
+                    padding: 0.8rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    transition: all 0.3s ease;
+                `;
+
+                navContainer.appendChild(hamburger);
+
+                // Mobile menu styles
+                navLinks.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 80%;
+                    height: 100vh;
+                    background: rgba(255, 255, 255, 0.98);
+                    backdrop-filter: blur(20px);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    transition: right 0.3s ease;
+                    z-index: 1001;
+                `;
+
+                // Toggle functionality
+                hamburger.addEventListener('click', function () {
+                    const currentRight = navLinks.style.right;
+                    if (currentRight === '-100%' || currentRight === '') {
+                        navLinks.style.right = '0';
+                        this.innerHTML = '<i class="fas fa-times"></i>';
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        navLinks.style.right = '-100%';
+                        this.innerHTML = '<i class="fas fa-bars"></i>';
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close menu on link click
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.style.right = '-100%';
+                        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+        }
+
+        // Enhanced floating animation for hero elements
+        function initFloatingAnimations() {
+            const floatingCards = document.querySelectorAll('.floating-card');
+            floatingCards.forEach((card, index) => {
+                // Add more dynamic floating
+                setInterval(() => {
+                    const randomX = (Math.random() - 0.5) * 20;
+                    const randomY = (Math.random() - 0.5) * 20;
+                    card.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${(Math.random() - 0.5) * 5}deg)`;
+                }, 3000 + index * 1000);
+            });
+        }
+
+        // Add typing effect for hero title
+        function initTypingEffect() {
+            const heroTitle = document.querySelector('.hero-content h1');
+            if (heroTitle) {
+                const text = heroTitle.textContent;
+                heroTitle.textContent = '';
+                heroTitle.style.borderRight = '3px solid var(--primary-gold)';
+
+                let index = 0;
+                const typeSpeed = 100;
+
+                function typeWriter() {
+                    if (index < text.length) {
+                        heroTitle.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(typeWriter, typeSpeed);
+                    } else {
+                        // Remove cursor after typing
+                        setTimeout(() => {
+                            heroTitle.style.borderRight = 'none';
+                        }, 1000);
+                    }
+                }
+
+                // Start typing after a delay
+                setTimeout(typeWriter, 1500);
+            }
+        }
+
+        // Parallax effect for hero section
+        function initParallaxEffect() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.floating-card');
+
+                parallaxElements.forEach((element, index) => {
+                    const speed = (index + 1) * 0.1;
+                    element.style.transform += ` translateY(${scrolled * speed}px)`;
+                });
+            });
+        }
+
+        // Enhanced button click effects
+        function initButtonEffects() {
+            const buttons = document.querySelectorAll('.cta-button, .pricing-button, .contact-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+
+                    ripple.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                        background: rgba(255, 255, 255, 0.3);
+                        border-radius: 50%;
+                        transform: scale(0);
+                        animation: rippleEffect 0.6s ease-out;
+                        pointer-events: none;
+                    `;
+
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        }
+
+        // Add CSS for ripple effect
+        function addRippleCSS() {
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes rippleEffect {
+                    to {
+                        transform: scale(4);
+                        opacity: 0;
+                    }
+                }
+                
+                /* Enhanced mobile responsiveness */
+                @media (max-width: 480px) {
+                    .hero-content h1 {
+                        font-size: 2.2rem !important;
+                    }
+                    
+                    .hero-subtitle {
+                        font-size: 1.1rem !important;
+                    }
+                    
+                    .section-title {
+                        font-size: 2.2rem !important;
+                    }
+                    
+                    .cta-buttons {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .cta-button {
+                        width: 100%;
+                        max-width: 300px;
+                        justify-content: center;
+                    }
+                    
+                    .services-grid,
+                    .pricing-grid,
+                    .automations-grid,
+                    .testimonials-grid {
+                        grid-template-columns: 1fr !important;
+                    }
+                    
+                    .pricing-card {
+                        margin: 0 1rem;
+                    }
+                    
+                    .floating-elements {
+                        display: none;
+                    }
+                }
+                
+                /* Dark mode support */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --text-primary: #e2e8f0;
+                        --text-secondary: #cbd5e0;
+                        --text-light: #a0aec0;
+                        --bg-light: #1a202c;
+                        --white: #2d3748;
+                    }
+                    
+                    .service-card,
+                    .pricing-card,
+                    .testimonial-card,
+                    .automation-card {
+                        background: #2d3748 !important;
+                        border-color: rgba(255, 255, 255, 0.1) !important;
+                    }
+                    
+                    .header {
+                        background: rgba(45, 55, 72, 0.95) !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Initialize all functions
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add event listeners
+            window.addEventListener('scroll', () => {
+                updateProgressBar();
+                headerScrollEffect();
+            });
+
+            // Initialize all features
+            initSmoothScrolling();
+            initCardEffects();
+            initCounterObserver();
+            initMobileMenu();
+            initFloatingAnimations();
+            initButtonEffects();
+            addRippleCSS();
+
+            // Disable typing effect as it might interfere with the gradient text
+            // initTypingEffect();
+
+            // Add performance optimization
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        updateProgressBar();
+                        headerScrollEffect();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener('scroll', requestTick, { passive: true });
+        });
+
+        // Add service worker for PWA functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
+        // Add error handling and performance monitoring
+        window.addEventListener('error', function (e) {
+            console.error('JavaScript error:', e.error);
+            // In production, you might want to send this to an error reporting service
+        });
+
+        // Performance monitoring
+        window.addEventListener('load', function () {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+        });
+
+        // Add lazy loading for images
+        function initLazyLoading() {
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        }
+
+        // Initialize lazy loading
+        initLazyLoading();
+
+        // Add smooth reveal animations for sections
+        function initSectionReveals() {
+            const sections = document.querySelectorAll('section');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'all 0.6s ease';
+                revealObserver.observe(section);
+            });
+        }
+
+        // Don't initialize section reveals as it might conflict with AOS
+        // initSectionReveals();
+    </script>
+
+    <!-- Service Worker for PWA -->
+    <script>
+        const swCode = `
+            const CACHE_NAME = 'jose-jara-v1';
+            const urlsToCache = [
+                '/',
+                '/manifest.json',
+                'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+                'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css',
+                'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap'
+            ];
+
+            self.addEventListener('install', function(event) {
+                event.waitUntil(
+                    caches.open(CACHE_NAME)
+                        .then(function(cache) {
+                            return cache.addAll(urlsToCache);
+                        })
+                );
+            });
+
+            self.addEventListener('fetch', function(event) {
+                event.respondWith(
+                    caches.match(event.request)
+                        .then(function(response) {
+                            if (response) {
+                                return response;
+                            }
+                            return fetch(event.request);
+                        })
+                );
+            });
+        `;
+
+        // Create and register service worker
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(blob);
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register(swUrl);
+        }
+    </script>
+
+    <!-- Web App Manifest -->
+    <script>
+        const manifest = {
+            name: "Jose Jara - Desarrollador Web",
+            short_name: "JoseJara",
+            description: "Desarrollador web especializado en ERP, IA y automatizaciones",
+            start_url: "/",
+            display: "standalone",
+            background_color: "#0066cc",
+            theme_color: "#0066cc",
+            icons: [
+                {
+                    src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%230066cc'/><text x='256' y='300' font-family='Arial,sans-serif' font-size='200' font-weight='bold' text-anchor='middle' fill='white'>JJ</text></svg>",
+                    sizes: "512x512",
+                    type: "image/svg+xml"
+                }
+            ]
+        };
+
+        const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+        const manifestUrl = URL.createObjectURL(manifestBlob);
+
+        const link = document.createElement('link');
+        link.rel = 'manifest';
+        link.href = manifestUrl;
+        document.head.appendChild(link);
+    </script>
+</body>
+
+</html>
